@@ -1,6 +1,5 @@
 import { useState,useEffect } from 'react'
 
-import './App.css'
 import { TodoProvider } from './Context'
 
 import { TodoForm,TodoItem } from './Components'
@@ -34,9 +33,9 @@ function App() {
 
   return (
     <TodoProvider value={{Todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
- <div className="bg-[#172842] min-h-screen py-8">
+ <div className="bg-blue-500 min-h-screen py-8">
                 <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-                <h1 className="text-4xl font-extrabold text-center mb-8 mt-4 text-blue-600">Your To-Do List Manager</h1>
+                <h1 className="text-4xl font-extrabold text-center mb-8 mt-4 text-white">Your To-Do List Manager</h1>
 
                     <div className="mb-4">
                         <TodoForm/>
